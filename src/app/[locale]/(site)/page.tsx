@@ -1,5 +1,3 @@
-"use client";
-
 import Footer from "@/src/components/layout/Footer";
 import Navbar from "@/src/components/layout/AuthInfo/AuthInfoBar";
 import IntroWebside from "@/src/sections/Intro";
@@ -11,26 +9,8 @@ import CallToAct from "@/src/sections/CallToAct";
 import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";
 
 
-import { useEffect } from 'react';
 
 
-export default function Home() {
-  useEffect(() => {
-    if (typeof window !== 'undefined' && typeof Worker !== 'undefined') {
-      const worker = new Worker(new URL('@/worker.js', import.meta.url));
-
-      worker.onerror = function (event) {
-        console.error('Error in Web Worker:', event.message);
-        // Perform error handling here
-      };
-
-      worker.postMessage('Some data for the Web Worker');
-
-      return () => {
-        worker.terminate();
-      };
-    }
-  }, []);
 
   return (
 
