@@ -8,9 +8,7 @@ import ColorChangeCards from "@/src/sections/ColorChangeCards";
 import CallToAct from "@/src/sections/CallToAct";
 import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";
 
-
-
-
+export default function Home() {
 
   return (
 
@@ -27,7 +25,7 @@ import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";
       <ColorChangeCards />
       <CallToAct />
       <HorizontalScroll />
-      <Footer />
+      <Footer /> c                                        
     </main>
   );
 }
