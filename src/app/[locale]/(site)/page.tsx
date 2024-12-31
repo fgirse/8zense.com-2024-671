@@ -25,7 +25,7 @@ export default function Home() {
       <ColorChangeCards />
       <CallToAct />
       <HorizontalScroll />
-      <Footer /> c                                        
+      <Footer />                                       
     </main>
   );
 }
