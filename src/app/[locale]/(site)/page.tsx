@@ -17,7 +17,7 @@ import CallToAct from "@/src/sections/CallToAct";
 
 export default function Home() {
 	return (
-		<main>
+	<>
 			<div className="bg-[#0D121F] px-[100px] text-white">
 			<AuthInfo />
       	<Navbar />
@@ -26,12 +26,13 @@ export default function Home() {
       <div className="bg-[#0D121F] px-[2.5vw] lg:px-[1.vw] text-white">
         <Hero />
         <IntroWebside />
+        <CollapseCardFeatures/>
       </div>
 			<Benefits />
 			<HowItWorks />
 		
 			<Footer />
-		</main>
+		à </>
 	);
 }
 
