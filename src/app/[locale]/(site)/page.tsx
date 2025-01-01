@@ -1,4 +1,31 @@
+"use client";
+
 import Footer from "@/src/components/layout/Footer";
+import Navbar from "@/src/components/layout/Navbar/navbar";
+import Benefits from "@/src/sections/Benefits";
+import Header from "@/src/sections/Header";
+import HowItWorks from "@/src/sections/HowItWorks";
+//import Pricing from "@/src/sections/Pricing";
+//import Testimonials from "@/sections/Testimonials";
+//import WhyUs from "@/sections/WhyUs";
+
+export default function Home() {
+	return (
+		<main>
+			<div className="bg-[#0D121F] px-[100px] text-white">
+				<Navbar />
+				<Header />
+			</div>
+			<Benefits />
+			<HowItWorks />
+		
+			<Footer />
+		</main>
+	);
+}
+
+
+{/*import Footer from "@/src/components/layout/Footer";
 import Navbar from "@/src/components/layout/AuthInfo/AuthInfoBar";
 import IntroWebside from "@/src/sections/Intro";
 import Hero from "@/src/sections/Hero";
@@ -29,3 +56,4 @@ export default function Home() {
     </main>
   );
 }
+*/}
