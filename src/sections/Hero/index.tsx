@@ -10,7 +10,7 @@ import Background from "@/public/images/footsteps.png";
 import { Locale } from "@/src/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-import { unstable_setRequestLocale } from "next-intl/server";
+
 
 
 const locale: string = "en";

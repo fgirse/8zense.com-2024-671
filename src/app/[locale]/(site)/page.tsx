@@ -12,29 +12,26 @@ import ColorChangeCards from "@/src/sections/ColorChangeCards";
 import CallToAct from "@/src/sections/CallToAct";
 import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";
 import CollapseCardFeatures from "@/src/sections/ColllapsCardFeatures";
-import { NextIntlClientProvider } from "next-intl";
 
-export default function Home() {
+export default function Page() {
 	return (
-	
-	
-		
-		
-		
-     <>
-      <div className="flex-col bg-[#0D121F] px-[2.5vw] lg:px-[1.0vw] text-white">
-      <div className="flex-grow">
-      <Hero />
-      <IntroWebside />
-      <CollapseCardFeatures/>
-      <FeatureAnimated />
-      <ColorChangeCards />
-      <CallToAct />
-      <HorizontalScroll />            
+	<>
+			<div className="bg-[#0D121F] px-[100px] text-white">
+			
+      
+				
+			</div>
+      <div className="bg-[#7c7a76] px-[2.5vw] lg:px-[1.vw] text-white">
+        <Hero />
+        <IntroWebside />
+        <div className="bg-[#0D121F] px-[2.5vw] lg:px-[1.vw] text-white">
+        <CollapseCardFeatures/>
+        </div>
       </div>
-      </div>
-		</>
-
+	
+		
+			<Footer />
+		à </>
 	);
 }
 
