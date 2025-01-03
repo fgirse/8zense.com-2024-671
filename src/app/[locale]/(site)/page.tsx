@@ -17,6 +17,8 @@ export default function Page() {
         <IntroWebside />
         <div className="bg-[#0D121F] px-[2.5vw] lg:px-[1.vw] text-white">
         <CollapseCardFeatures/>
+        <FeatureAnimated />
+        <ColorChangeCards />
         
         </div>
       </div>
