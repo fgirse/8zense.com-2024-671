@@ -1,5 +1,5 @@
 import {BasejumpUserSession,SignedIn,SignedOut} from "@usebasejump/next";
-import UserProfileButton from "@/src/components/basejump/UserProfileButton"
+import UserAccountButton from "@/src/components/basejump/userAccountButton"
 import Link from "next/link";
 
 
@@ -9,7 +9,7 @@ export default function Navigation() {
         
                 <BasejumpUserSession>
                     <SignedIn>
-                        <UserProfileButton />
+                        <UserAccountButton />
                     </SignedIn>
                     <SignedOut>
                         

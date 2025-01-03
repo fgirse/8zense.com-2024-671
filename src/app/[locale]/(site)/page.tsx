@@ -1,10 +1,5 @@
 "use client";
 
-import Footer from "@/src/components/layout/Footer";
-import Navbar from "@/src/components/layout/Navbar/navbar";
-import Benefits from "@/src/sections/Benefits";
-import HowItWorks from "@/src/sections/HowItWorks";
-//import AuthInfo from "@/src/components/layout/AuthInfo/AuthInfoBar";
 import IntroWebside from "@/src/sections/Intro";
 import Hero from "@/src/sections/Hero";
 import FeatureAnimated from "@/src/sections/FeatureAnimated";
@@ -16,22 +11,22 @@ import CollapseCardFeatures from "@/src/sections/ColllapsCardFeatures";
 export default function Page() {
 	return (
 	<>
-			<div className="bg-[#0D121F] px-[100px] text-white">
-			
-      
-				
-			</div>
+		
       <div className="bg-[#7c7a76] px-[2.5vw] lg:px-[1.vw] text-white">
         <Hero />
         <IntroWebside />
         <div className="bg-[#0D121F] px-[2.5vw] lg:px-[1.vw] text-white">
         <CollapseCardFeatures/>
+        <FeatureAnimated />
+        <ColorChangeCards />
+        <CallToAct />
+        <HorizontalScroll />
         </div>
       </div>
 	
 		
-			<Footer />
-		à </>
+			
+		</>
 	);
 }
 
