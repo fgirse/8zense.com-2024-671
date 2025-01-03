@@ -1,4 +1,4 @@
-"use client";
+
 
 import Footer from "@/src/components/layout/Footer";
 import Navbar from "@/src/components/layout/Navbar/navbar";
@@ -21,7 +21,7 @@ export default function Home() {
 		
 		
 		
-     <main>
+     <>
       <div className="flex-col bg-[#0D121F] px-[2.5vw] lg:px-[1.0vw] text-white">
       <div className="flex-grow">
       <Hero />
@@ -33,7 +33,7 @@ export default function Home() {
       <HorizontalScroll />            
       </div>
       </div>
-		</main>
+		</>
 
 	);
 }
