@@ -32,7 +32,7 @@ const IntroWebside = () => {
           </div>
         </div>
 
-        <section className="h-33vh mx-auto lg:w-2/3 lg:bg-[url('/assets/images/space02.svg')] lg:bg-contain lg:bg-no-repeat">
+        <section className="h-33vh mx-auto lg:w-2/3 lg:bg-[url('/images/space02.svg')] lg:bg-contain lg:bg-no-repeat">
           <div className="relative -z-10 -mt-60 h-[33vh] w-[77vw] lg:h-[100vh] lg:w-[90vw]">
             <Image src={Space} sizes="100vw" alt="space Illustration" />
           </div>
