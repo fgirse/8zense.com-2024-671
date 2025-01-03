@@ -17,6 +17,7 @@ import AuthInfoBar from "@/src/components/layout/AuthInfo/AuthInfoBar";
 import {Raleway, Architects_Daughter, Bowlby_One_SC } from "next/font/google"
 ;
 import ScrollToTopButton from '@/src/components/ScrollToTopButton';
+import Footer from '@/src/components/layout/Footer';
 
 
 const architectsDaughter = Architects_Daughter({
@@ -116,6 +117,7 @@ export default function BaseLayout({children, locale}: Props) {
               <Navigation/>
              {children}
               <ScrollToTopButton/>
+              <Footer/>   
               </UserProvider>
 					</SupabaseProvider>
 				</ThemeProvider>

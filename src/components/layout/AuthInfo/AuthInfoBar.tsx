@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import LogoEZ from "@/public/images/LogoEZ990.svg";
+import Navigation from"@/src/components/basejump/navigation";
 
 export default function Authinfobar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,6 +67,7 @@ export default function Authinfobar() {
             </>
           )}
         </div>
+        <Navigation/>
       </div>
     </div>
   );

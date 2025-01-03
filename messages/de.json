@@ -25,6 +25,17 @@
  "CallToAct": {
       "Fragen": "Fragen ???"
  },
+ 
+ "CollapsCardFeatures": {
+      "Text_01": "Wir sind top!!!",
+      "Text_02": "Hier ist warum:",
+      "Text_06": "Individualität ist bei 8zense.com gross geschrieben. Jede unserer Beton-Compositionen ist ein Einzelstück!",
+      "Text-07": "Wir pflegen beste Verbindungen zu Architekten und Designern!",
+      "Text_08": "Alle die von uns hergestellten Werkstücke sind handgefertigt!",
+      "Text_09": "Wir verwenden ausschliesslich hochwertige Materialien!",
+      "Text_10": "8zense.com steht für klares Design, hohe Funktionalität und ausgezeichneter Material Qualität",    
+      "Text_11": "8zense.com Beton-Design ist zeitlos!"                                                    
+    },
 
     "Contact": {
       "Title_Contact": "Kontakt"
@@ -163,6 +174,14 @@
       "SubTitle_Whoweare": "8zense.com ist Fernanda Pereira",
       "Text_Whoweare": "enstand aus der Intuition heraus, obwelcher Fernanda sich immer wieder die Frage stellte, ob gutes Design nur denjenigen Menschen zusteht die dies sich auch leisten können. Als studierte Innenarchitektin hat Fernanda unzählige Projekte betreut und die Ingredentien Beton Holz - Stahl umd Glas haben sich als die favorisierten Werkstoffe ihres Schaffens rund um gutes, ansprechendes und zeitloses Design entwickelt. Es war immer Fernandas Wunsch die Symbiose der Werkstoffe zu kombinieren und mit ihnen zu experimentieren. Das Ergebnis ist:"
     },
+
+    "Whatwedo": {
+      "präTitle": "Was wir tun?",
+      "Title_Whatwedo": "Was wir tun?",
+      "SubTitle_Whatwedo": "8zense.com ist Fernanda Pereira",
+      "Text_Whatwedo": "enstand aus der Intuition heraus, obwelcher Fern"
+    },
+
     "IndexPage": {
       "title": "Rechtliches",
       "description": "absbssbbbsb"

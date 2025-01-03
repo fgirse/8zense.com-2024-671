@@ -37,7 +37,7 @@ const IntroWebside = () => {
           </div>
 
           <section className="container mx-auto  grid w-full max-w-6xl grid-cols-1 items-center gap-8 px-8 py-12 lg:grid-cols-1">
-            <h1 className="via lg:top lg:leading-0 relative bg-slate-600 bg-gradient-to-b from-slate-900 to-slate-500 bg-clip-text px-1 text-[3.0rem] font-black uppercase leading-10 text-transparent md:text-center md:text-[3.750rem] md:leading-[4rem] lg:text-8xl lg:tracking-wider">
+            <h1 className="via lg:top lg:leading-0 relative bg-slate-600 bg-gradient-to-b from-slate-900 to-orange-500 bg-clip-text px-1 text-[3.0rem] font-black uppercase leading-10 text-transparent md:text-center md:text-[3.750rem] md:leading-[4rem] lg:text-8xl lg:tracking-wider">
               Interiore Design
             </h1>
 
