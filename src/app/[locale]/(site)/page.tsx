@@ -18,8 +18,8 @@ export default function Page() {
         <div className="bg-[#0D121F] px-[2.5vw] lg:px-[1.vw] text-white">
         <CollapseCardFeatures/>
         <ColorChangeCards />
-        
-        
+        <CallToAct />
+<HorizontalScroll />        
         </div>
       </div>
 	
