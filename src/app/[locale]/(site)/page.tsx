@@ -11,15 +11,15 @@ import CollapseCardFeatures from "@/src/sections/ColllapsCardFeatures";
 export default function Page() {
   return (
     <>
-      <div className="bg-[#7c7a76] px-[2.5vw] lg:px-[1.vw] text-white">
+      <div className="bg-[#302f2e] lg:px-[2.5vw] text-white">
         <Hero />
         <IntroWebside />
-        <div className="bg-[#0D121F] px-[2.5vw] lg:px-[1.vw] text-white">
+        <div className="bg-[#0D121F] text-white">
           <CollapseCardFeatures />
-          <FeatureAnimated />
+          
           <ColorChangeCards />
           <CallToAct />
-          <HorizontalScroll />
+         <HorizontalScroll />
         </div>
       </div>
     </>

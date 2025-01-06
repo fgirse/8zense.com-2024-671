@@ -8,8 +8,9 @@ function App  ()  {
 
    return (
 
-    <div className='bg-lime-200 flex flex-col justify-center items-center'> 
-    <h1 className=' font-bowlbySC text-neutral-600 py-20 text-4xl text-center'>{t('Fragen')}</h1>
+    <div className='bg-lime-200/50 flex flex-col justify-center items-center'> 
+    <h1 className=' font-bowlbySC text-neutral-100 py-20 text-4xl text-center'>{t('Fragen')}</h1>
+    <p className='text-center text-neutral-100 text-lg font-raleway'>{t('FragenText01')}</p>
     <DotLottieReact
       src="/images/calltoact.lottie"
       loop

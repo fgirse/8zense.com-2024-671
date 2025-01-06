@@ -24,7 +24,7 @@ const CollapseCardFeatures = () => {
     <section className="overflow-hidden bg-neutral-100 px-4 py-12">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 flex justify-between gap-4">
-          <h2 className="text-4xl font-bold leading-[1.2] md:text-5xl">
+          <h2 className="text-stone-600 text-4xl font-bold leading-[1.2] md:text-5xl">
             Wir sind top! <span className="text-slate-400">Hier ist warum</span>
           </h2>
           <div className="flex gap-2">

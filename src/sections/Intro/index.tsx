@@ -12,7 +12,7 @@ const IntroWebside = () => {
   return (
     <>
       <section>
-        <div className="grid-rows-16 grid grid-cols-12 gap-1">
+        <div className="-mt-48 grid-rows-16 grid grid-cols-12 gap-1">
           <div className="col-span-7 col-start-1 row-span-3 row-start-4"></div>
 
           <div className="relative col-span-6 col-start-7 row-span-7 row-start-1 mr-5 px-1">
@@ -38,16 +38,16 @@ const IntroWebside = () => {
           </div>
 
           <section className="container mx-auto mt-16 grid w-full max-w-6xl grid-cols-1 items-center gap-8 px-8 py-12 lg:grid-cols-1">
-            <h1 className="via lg:top lg:leading-0 relative -top-20 bg-slate-600 bg-gradient-to-b from-slate-900 to-slate-500 bg-clip-text px-1 text-[3.0rem] font-black uppercase leading-10 text-transparent md:text-center md:text-[3.750rem] md:leading-[4rem] lg:text-8xl lg:tracking-wider">
+            <h1 className=" lg:top lg:leading-0 relative -top-20 text-white px-1 text-[3.0rem] font-black uppercase leading-10 text-transparent md:text-center md:text-[3.750rem] md:leading-[4rem] lg:text-8xl lg:tracking-wider">
               {t('text01')}
             </h1>
 
-            <div className="relative -top-20 h-[24vh] w-[75vw] lg:w-[45vw]">
+            <div className="relative -top-20 h-[24vh] w-[75vw] lg:w-[45vw] bg-stone-200 ">
               <Image src={Skizze} fill sizes="100vw" alt="Skizze" />
             </div>
 
-            <p className="my-4 -mt-12 text-base text-slate-700 md:my-6 md:text-lg">
-              <span className="font-bold text-zenseSignal2">8zenSe.com</span>{" "}
+            <p className="my-4 -mt-12 text-base text-slate-200 md:my-6 md:text-lg">
+              <span className="font-bold text-amber-500">8zenSe.com</span>{" "}
               {t('text02')}
             </p>
           </section>
@@ -57,16 +57,16 @@ const IntroWebside = () => {
           </div>
 
           <section className="container mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-8 px-8 lg:grid-cols-1">
-            <h1 className="lg:leading-0 via lg:top relative -mt-12 bg-slate-600 bg-gradient-to-b from-slate-900 to-slate-500 bg-clip-text px-1 text-[3.0rem] font-black uppercase leading-10 text-transparent md:text-center md:text-[3.750rem] lg:text-9xl lg:text-[4rem] lg:tracking-wider">
+            <h1 className="lg:leading-0 via lg:top relative -mt-12 px-1 text-[3.0rem] font-black uppercase leading-10  md:text-center md:text-[3.750rem] lg:text-9xl lg:text-[4rem] lg:tracking-wider">
             {t('text03')}
             </h1>
 
-            <div className="relative mt-3 h-[24vh] w-[75vw] lg:w-[45vw]">
+            <div className="relative mt-3 h-[24vh] w-[75vw] lg:w-[45vw] bg-stone-200">
               <Image src={Skizze} fill sizes="100vw" alt="Skizze" />
             </div>
 
-            <p className="my-4 text-base text-slate-700 md:my-6 md:text-lg">
-              <span className="font-bold text-zenseSignal2">8zenSe.com</span>{" "}
+            <p className="my-4 text-base text-slate-200 md:my-6 md:text-lg">
+              <span className="font-bold text-amber-500">8zenSe.com</span>{" "}
               {t('text04')}{" "}
             </p>
 
