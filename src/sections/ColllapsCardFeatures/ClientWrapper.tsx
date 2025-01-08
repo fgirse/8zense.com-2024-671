@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Feature from '@/src/sections/ColllapsCardFeatures/Feature'; // Import the Feature component
+import { useTranslations } from 'next-intl';
 
 // Define the type for the array elements
 interface Feature {
@@ -29,12 +30,14 @@ const ClientWrapper: React.FC<ClientWrapperProps> = ({ serverArray }) => {
     }
   };
 
+  const t = useTranslations('CollapsCard');
+
   return (
     <section className="overflow-hidden bg-neutral-100 px-4 py-12">
       <div className="mx-auto max-w-6xl">
         <div className="mb-8 flex justify-between gap-4">
           <h2 className="text-stone-600 text-4xl font-bold leading-[1.2] md:text-5xl">
-            t('Text_01') <span className="text-slate-400">Hier ist warum</span>
+            {t('Text_01')} <span className="text-slate-400"> {t('Text_02')}</span>
           </h2>
           <div className="flex gap-2">
             <button

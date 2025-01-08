@@ -8,7 +8,7 @@ const page = () => {
     
     <h1 className='uppercase text-center text-neutral-c700 text-4xl lg:text-7xl'>{t('Title_Datenschutz')}</h1>
     </div>
-    
+   
   )
 }
 

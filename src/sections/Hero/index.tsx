@@ -20,7 +20,7 @@ export default function Hero () {
   const t = useTranslations("Hero");
 
   return (
-<section id="section-Hero" className="bg-[url('/images/interiore14.jpg')] bg-contain bg-no-repeat full flex-col items-center lg:bg-[url('/images/interiore13.jpg')] lg:bg-cover lg:bg-no-repea ">
+<section id="section-Hero" className="bg-[url('/images/interiore27.jpg')] bg-contain bg-no-repeat full flex-col items-center lg:bg-[url('/images/interiore13.jpg')] lg:bg-cover lg:bg-no-repea ">
     
       <div className="  flex min-h-screen flex-col items-center">
       
@@ -41,7 +41,7 @@ export default function Hero () {
         <p className="relative top-12 text-center text-[1.0663rem] leading-8 text-neutral-100 sm:text-4xl md:top-3 md:tet-4xl lg:mb-4 lg:top-16 lg:text-center lg:text-5xl lg:text-neutral-50">
           {t("postTitle")}
         </p>
-        <div className="mt-48 flex flex-col items-center justify-cente lg:mt-16">
+        <div className="mt-56 flex flex-col items-center justify-cente lg:mt-16">
         <Gsap/>
         </div>
         </div>                                                                                                                      

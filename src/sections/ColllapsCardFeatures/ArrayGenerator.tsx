@@ -41,7 +41,7 @@ const ArrayGenerator: React.FC<ArrayGeneratorProps> = ({ serverArray }) => {
     },
     {
       title: t('zeitlos'),
-      icon: '/images/Zeitlos.png',
+      icon: '/images/zeitlos.png',
       description: t('Text_10'),
     },
   ];

@@ -2,9 +2,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='flex flex-col h-screen items-center justify-center text-center text-neutral-700 text-4xl lg:text-7xl'>
+    <div className='min-h-lvh flex flex-col items-center justify-center text-neutral-700 text-4xl lg:text-7xl h-screen'>
     
-    <h1 className='uppercase text-center text-neutral-700 text-4xl lg:text-7xl'>galerie</h1>
+    <h1 className='items-center justify-center uppercase text-center text-neutral-700 text-4xl lg:text-7xl'>galerie</h1>
     </div>
     
   )

@@ -42,7 +42,7 @@ const IntroWebside = () => {
               {t('text01')}
             </h1>
 
-            <div className="relative -top-20 h-[24vh] w-[75vw] lg:w-[45vw] bg-stone-200 ">
+            <div className="relative -top-20 h-[24vh] w-[75vw] lg:w-[45vw] bg-stone-200 rounded-lg ">
               <Image src={Skizze} fill sizes="100vw" alt="Skizze" />
             </div>
 
@@ -61,7 +61,7 @@ const IntroWebside = () => {
             {t('text03')}
             </h1>
 
-            <div className="relative mt-3 h-[24vh] w-[75vw] lg:w-[45vw] bg-stone-200">
+            <div className="relative mt-3 h-[24vh] w-[75vw] lg:w-[45vw] bg-stone-200 rounded-lg">
               <Image src={Skizze} fill sizes="100vw" alt="Skizze" />
             </div>
 
