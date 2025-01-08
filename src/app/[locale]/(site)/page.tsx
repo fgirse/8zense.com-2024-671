@@ -7,7 +7,7 @@ import ColorChangeCards from "@/src/sections/ColorChangeCards";
 import CallToAct from "@/src/sections/CallToAct";
 import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";
 import CollapseCardFeatures from "@/src/sections/ColllapsCardFeatures";
-import ArrayTest from "@/src/sections/ArrayTest";  // This import is not used in the code            
+import ArrayTest from "@/src/sections/ColllapsCardFeatures";  // This import is not used in the code            
           
 export default function Page() {
   return (
@@ -17,7 +17,6 @@ export default function Page() {
         <IntroWebside />
         <div className="bg-[#0D121F] text-white">
           <CollapseCardFeatures />
-          <ArrayTest />
           <ColorChangeCards />
           <CallToAct />
          <HorizontalScroll />

@@ -1,5 +1,6 @@
 import React from 'react';
 import ClientWrapper from './ClientWrapper';
+import { useTranslations } from 'next-intl';
 
 // Define the type for the array elements
 interface Feature {
@@ -8,41 +9,44 @@ interface Feature {
   description: string;
 }
 
+// Define the props type
+interface ArrayGeneratorProps {
+  serverArray: Feature[];
+}
+
 // This is a Server Component
-export default function ArrayGenerator() {
-  // Generate an array on the server
+const ArrayGenerator: React.FC<ArrayGeneratorProps> = ({ serverArray }) => {
+  const t = useTranslations("CollapsCard");
+
   const features: Feature[] = [
     {
       title: 'Individualität',
       icon: '/images/Individualität.gif',
-      description:
-        'Individualität ist bei 8zense.com gross geschrieben. Jede unserer Beton-Compositionen ist ein Einzelstück!',
+      description: t('Text_06'),
     },
     {
       title: 'Networking',
       icon: '/images/networking03.gif',
-      description:
-        'Wir pflegen beste Verbindungen zu renommierten Architekten und Designern!',
+     description: t('Text_07'),
     },
     {
       title: 'Top Qualität',
       icon: '/images/qualität.gif',
-      description:
-        'Alle die von uns hergestellten Werkstücke sind handgefertigt! ',
+      description: t('Text_08'),
     },
     {
       title: 'Exklusiv',
       icon: '/images/exclusive.svg',
-      description:
-        '8zense.com steht für klares Design, hohe Funktionalität und ausgezeichneter Material Qualität!',
+      description: t('Text_09'),
     },
     {
-      title: 'Zeitlos',
+      title: t('zeitlos'),
       icon: '/images/Zeitlos.png',
-      description: '8zense.com Beton-Design ist zeitlos!',
+      description: t('Text_10'),
     },
   ];
 
   return <ClientWrapper serverArray={features} />;
-}
+};
 
+export default ArrayGenerator;
