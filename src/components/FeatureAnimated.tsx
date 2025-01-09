@@ -1,4 +1,5 @@
 // index.tsx
+"use client"
 import React, { use, useState } from 'react';
 import ReactDOM from 'react-dom';
 import LottieAnimation from '@/src/components/LottiAnimation';
