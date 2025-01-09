@@ -2,7 +2,7 @@
 
 import IntroWebside from "@/src/sections/Intro";
 import Hero from "@/src/sections/Hero";
-import FeatureAnimated from "@/src/components/FeatureAnimated";
+import { FeatureAnimated} from "@/src/components/FeatureAnimated";
 import ColorChangeCards from "@/src/sections/ColorChangeCards";
 import CallToAct from "@/src/sections/CallToAct";
 import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";

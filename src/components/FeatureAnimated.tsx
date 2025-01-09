@@ -16,7 +16,7 @@ import  { FC } from 'react';
 
 const stories = [animationData1, animationData2, animationData3, animationData4, animationData5, animationData6,  animationData7 /*, other animation data */];
 
-const FeatureAnimated: React.FC = () => {
+export const FeatureAnimated: React.FC = () => {
   const [currentStory, setCurrentStory] = useState(0);
 
   const goToPreviousStory = () => {
@@ -45,7 +45,4 @@ const FeatureAnimated: React.FC = () => {
         </button>
       </div>
     </div>
-  );
-};
-
-export default FeatureAnimated;
+    );}
