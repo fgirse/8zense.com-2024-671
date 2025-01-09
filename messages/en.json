@@ -16,17 +16,19 @@
     },
 
   "CallToAct": {
-      "Fragen": "any Questions ???"
+      "Fragen": "any Questions ???",
+      "FragenText01": "Contact us to clarify all your questions. Write us an email. We will answer all your open questions"
  },
   
  "CollapsCard": {
-  "Text_01": "Wir sind top!!!",
-  "Text_02": "Hier ist warum:",
+  "Text_01": "We are top!!!",
+  "Text_02": "Here is why:",
   "Text_06": "Individuality is at 8zense.com grossly affected. Each of our concrete compositions is unique!",
-  "Text-07": "We maintain best connections to architects and designers!",
-  "Text-08": "All of the workpieces we produce are handmade!!!",
+  "Text_07": "We maintain best connections to architects and designers!",
+  "Text_08": "All of the workpieces we produce are handmade!!!",
   "zeitlos": "Timeless",
-  "Text-09": "8zense.com concrete design is timeless!"
+  "Text_09": "We use only high-quality materials!",             
+  "Text_10": "8zense.com concrete design is timeless!"
 
 },
 
