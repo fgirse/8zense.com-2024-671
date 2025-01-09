@@ -12,6 +12,7 @@ import animationData6 from '@/public/images/lotti05.json';
 import animationData7 from '@/public/images/lotti06.json';                                     
 // Import other animation data as needed
 import { useTranslations } from 'next-intl';
+import  { FC } from 'react';
 
 const stories = [animationData1, animationData2, animationData3, animationData4, animationData5, animationData6,  animationData7 /*, other animation data */];
 
