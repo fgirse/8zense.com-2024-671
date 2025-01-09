@@ -1,6 +1,6 @@
 // index.tsx
 "use client"
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import LottieAnimation from '@/src/components/LottiAnimation';
 import animationData1 from '@/public/images/lotti.json';              
@@ -15,7 +15,7 @@ import { useTranslations } from 'next-intl';
 
 const stories = [animationData1, animationData2, animationData3, animationData4, animationData5, animationData6,  animationData7 /*, other animation data */];
 
-const App: React.FC = () => {
+const FeatureAnimated: React.FC = () => {
   const [currentStory, setCurrentStory] = useState(0);
 
   const goToPreviousStory = () => {
@@ -47,4 +47,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default FeatureAnimated;
