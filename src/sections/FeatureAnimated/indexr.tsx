@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';

@@ -66,8 +66,11 @@
     },
   
     "HowItWorks": {
+
         "Howitworks": "How it works!",
         "Prozesse": "Workflow of prozesses at 8zense.com:",
+        "Previous": "Next",            
+        "Next": "Weiter",
         "text_01": "Sign up an account on our webside 8zense.com!",
         "text_02": "Arrange a goal-setting meeting with Fernanda to define your wishes, ideas and visions!",
         "text_03": "Thanks to our excellent networking, we will find exactly the team for you that, under the leadership of Fernanda, will fulfill your design dream.",

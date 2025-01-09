@@ -2,7 +2,7 @@
 
 import IntroWebside from "@/src/sections/Intro";
 import Hero from "@/src/sections/Hero";
-import FeatureAnimated from "@/src/sections/FeatureAnimated/indextemp";
+import FeatureAnimated from "@/src/sections/FeatureAnimated";
 import ColorChangeCards from "@/src/sections/ColorChangeCards";
 import CallToAct from "@/src/sections/CallToAct";
 import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";
@@ -17,6 +17,7 @@ export default function Page() {
         <IntroWebside />
         <div className="bg-[#0D121F] text-white">
           <CollapseCardFeatures />
+          <FeatureAnimated />   
           <ColorChangeCards />
           <CallToAct />
          <HorizontalScroll />

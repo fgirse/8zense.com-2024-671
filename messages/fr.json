@@ -70,6 +70,10 @@
 
     "HowItWorks": {
         "Howitworks": "Comment ça marche !",
+        "Previous": "Suivant",            
+        "Next": "Précédent",
+    
+        
         "Prozesse": "Flux de travail des processus sur 8zense.com :",
         "text_01": "créez un compte sur notre site Web 8zense!",
         "text_02": "Arrange a goal-setting meeting with Fernanda to define your wishes, ideas and visions!",

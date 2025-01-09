@@ -20,7 +20,7 @@
       "Text_01": "Wir sind top!!!",
       "Text_02": "Hier ist warum:",
       "Text_06": "Individualität ist bei 8zense.com gross geschrieben. Jede unserer Beton-Compositionen ist ein Einzelstück!",
-      "Text-07": "Wir pflegen beste Verbindungen zu Architekten und Designern!",
+      "Text_07": "Wir pflegen beste Verbindungen zu Architekten und Designern!",
       "Text_08": "Alle die von uns hergestellten Werkstücke sind handgefertigt!",
       "Text_09": "Wir verwenden ausschliesslich hochwertige Materialien!",
       "Text_10": "8zense.com steht für klares Design, hohe Funktionalität und ausgezeichneter Material Qualität",
@@ -81,6 +81,8 @@
 
     "HowItWorks": {
       "Howitworks": "So funktioniert's !",
+      "Previous": "Zurück",           
+      "Next": "Weiter",
       "Prozesse": "Ablauf der Prozesse von 8zense.com:",
       "text_01": "Erstellen Sie einen Account auf unserer Website  von 8zense.com!",
       "text_02": "Vereinbaren Sie ein Zielgespräch mit Fernanda zur Definition Ihrer Wünsche, Vorstellungen und Ideen!",

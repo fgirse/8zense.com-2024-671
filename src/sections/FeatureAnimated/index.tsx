@@ -1,106 +1,49 @@
-"use client";
-import { useState, useEffect, useCallback } from "react";
-import { motion } from "framer-motion";
-import { Player } from "@lottiefiles/react-lottie-player";
-import { Link, Locale } from "@/src/i18n/routing";
-import { useLocale, useTranslations } from "next-intl";
-import getMessages from "next-intl/server";
+// index.tsx
+import React, { use, useState } from 'react';
+import ReactDOM from 'react-dom';
+import LottieAnimation from '@/src/components/LottiAnimation';
+import animationData1 from '@/public/images/lotti.json';              
+import animationData2 from '@/public/images/lotti01.json';
+import animationData3 from '@/public/images/lotti02.json';                  
+import animationData4 from '@/public/images/lotti03.json';    
+import animationData5 from '@/public/images/lotti04.json';
+import animationData6 from '@/public/images/lotti05.json';
+import animationData7 from '@/public/images/lotti06.json';                                     
+// Import other animation data as needed
+import { useTranslations } from 'next-intl';
 
-interface Step {
-  id: number;
-  text: string;
-  animation: string;
-}
+const stories = [animationData1, animationData2, animationData3, animationData4, animationData5, animationData6,  animationData7 /*, other animation data */];
 
-const locale: string = "en-US";
+const App: React.FC = () => {
+  const [currentStory, setCurrentStory] = useState(0);
 
-export default function HowItWorks() {
-  const t = useTranslations("HowItWorks");
+  const goToPreviousStory = () => {
+    if (currentStory > 0) {
+      setCurrentStory(currentStory - 1);
+    }
+  };
 
-  const [step, setStep] = useState<number>(0);
+  const goToNextStory = () => {
+    if (currentStory < stories.length - 1) {
+      setCurrentStory(currentStory + 1);
+    }
+  };
 
-  const steps: Step[] = [
-    {
-      id: 1,
-      text: t("text_01"),
-      animation:
-        "https://lottie.host/e90fc516-078a-4e65-ac43-ab5a7b1bc4ed/W6DDrvJFL3.json",
-    },
-    {
-      id: 2,
-      text: t("text_02"),
-      animation:
-        "https://lottie.host/57443a3d-e280-4f39-9134-86d96cd8f28f/ohtp2XVGjS.json",
-    },
-    {
-      id: 3,
-      text: t("text_03"),
-      animation:
-        "https://lottie.host/78373cd4-e991-482b-8f25-e897acb9bbb8/V0IaYYRt3A.json",
-    },
-    {
-      id: 4,
-      text: t("text_04"),
-      animation:
-        "https://assets3.lottiefiles.com/private_files/lf30_p9it5a2a.json",
-    },
-    {
-      id: 5,
-      text: t("text_05"),
-      animation:
-        "https://lottie.host/d969d744-bf03-4aa4-90ac-50f9c5dda9b5/P36NGczhaX.json",
-    },
-
-    {
-      id: 6,
-      text: t("text_06"),
-      animation:
-        "https://lottie.host/59703381-ed25-463c-913f-7cd163db2aa7/uF1vDxwgIZ.json",
-    },
-  ];
-
-  const handleStepChange = useCallback(() => {
-    setStep((prevStep) => (prevStep + 1) % steps.length);
-  }, [steps.length]);
-
-  useEffect(() => {
-    const interval = setInterval(handleStepChange, 7000);
-    return () => clearInterval(interval);
-  }, [handleStepChange]);
-
+  const t = useTranslations('HowItWorks');             
   return (
-    <>
-      <h1 className="text-center bg-black uppercase text-3xl text-white lg:py-5">
-        {t("Howitworks")}
-      </h1>
-      <motion.div
-        className=" flex flex-col sm:min-h-screen h-full"
-        key={steps[step].id} // Add a unique key to trigger motion animation on step change
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0.5 }}
-        transition={{
-          duration: 1, // Adjust the duration as desired
-        }}
-      >
-        <div className="h-[10%] p-5 flex flex-col items-center justify-center">
-          <div className=" grid-cols-2 gap-8">
-            <p className="mb-1§2 text-sm md:text-base text-slate-800 font-light leading-relaxed text-center"></p>
-            <h2 className="text-1xl md:text-4xl text-[#1A2238] font-semibold mb-4 text-center lg:py-9">
-              {`so funktioniert 8zense.com!!!`}
-            </h2>
-            <Player
-              autoplay
-              loop
-              src={steps[step].animation}
-              style={{ height: "26.66vh", width: "100%", marginBottom: "3vh" }}
-            />
-          </div>
-          <p className="h-24 w-96 relative')]  text-sm px-6 text-slate-900 font-light mb-4 text-center">
-            {steps[step].text}
-          </p>
-        </div>
-      </motion.div>
-    </>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1 className='uppercase text-4xl md:text-6xl lg:text-7xl'>{t('Howitworks')}</h1>
+      <LottieAnimation animationData={stories[currentStory]} />
+      <div className='mb-7 flex gap-x-5 justify-center'>
+        <button className='rounded-lg border-2 border-stone-300 text-2xl px-2 hover:bg-stone-300 hover:text-stone-700 hover:cursor-pointer md:text-[1.66rem] lg:text-[2.33rem]'  onClick={goToPreviousStory} disabled={currentStory === 0}>
+          {t('Previous')}
+        </button>
+        <button className='rounded-lg border-2 border-stone-300 text-2xl px-2 hover:bg-stone-300 hover:text-stone-700 hover:cursor-pointer md:text-[1.66rem] lg:text-[2.33rem]' onClick={goToNextStory} disabled={currentStory === stories.length - 1}>
+         {t('Next')}
+        </button>
+      </div>
+    </div>
   );
-}
+};
+
+export default App;
