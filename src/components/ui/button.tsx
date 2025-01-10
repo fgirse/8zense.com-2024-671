@@ -15,8 +15,8 @@ const buttonVariants = cva(
         outline:
           "text-[1.1qrem] border border-input bg-ddbackground hover:bg-gray-200 hover:text-accent-foreground md:text-[2.0rem] md:py-5",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+          "bg-stone-600 hover:bg-gradient-to-r from-orange-600 to-yellow-300 text-white hover:bg-secondary/50",
+        ghost: "hover:bg-gradient to b orange-500 to grey-400 hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {

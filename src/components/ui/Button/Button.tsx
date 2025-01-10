@@ -9,7 +9,8 @@ import LoadingDots from '@/src/components/ui/LoadingDots';
 import styles from './Button.module.css';
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'slim' | 'flat';
+  variant?: 'slim' | 'flat' | 'primary';
+  size?: 'small' | 'medium' | 'large';    
   active?: boolean;
   width?: number;
   loading?: boolean;

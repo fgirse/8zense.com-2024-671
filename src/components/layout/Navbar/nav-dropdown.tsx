@@ -30,7 +30,7 @@ export default function NavDropdown({ title, items }: NavDropdownProps) {
                   <NavigationMenuLink asChild>
                     <Link
                       href={item.href}
-                      className="block uppercase text-neutral-700 select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-red-500/20 focus:text-accent-foreground"
+                      className="block text-neutral-700 select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-red-500/20 focus:text-accent-foreground"
                     >
                       {item.title}
                     </Link>

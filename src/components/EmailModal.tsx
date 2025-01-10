@@ -16,7 +16,7 @@ const ExampleWrapper = () => {
       <div className='wrapper'>
         <button
         onClick={() => setIsOpen(true)}
-        className="w-60 h-15">
+        className="bg-stone-500 py-3 rounded-lg shadow-lg hover:border-2  hover:text-stone-50 shadow-white w-60 h-15">
       sende email Nachricht
     </button>
     </div>

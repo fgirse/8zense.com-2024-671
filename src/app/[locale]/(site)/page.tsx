@@ -4,7 +4,7 @@ import IntroWebside from "@/src/sections/Intro";
 import Hero from "@/src/sections/Hero";
 import FeatureAnimated from "@/src/sections/FeatureAnimated";
 import ColorChangeCards from "@/src/sections/ColorChangeCards";
-import CallToAct from "@/src/sections/CallToAct";
+import  CallToAct from "@/src/sections/CallToAct";
 import HorizontalScroll from "@/src/components/HorizontalScrollCarousel";
 import CollapseCardFeatures from "@/src/sections/ColllapsCardFeatures";
 import ArrayTest from "@/src/sections/ColllapsCardFeatures";  // This import is not used in the code            

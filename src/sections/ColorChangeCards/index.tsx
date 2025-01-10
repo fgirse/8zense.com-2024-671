@@ -5,7 +5,8 @@ import { FiArrowRight } from "react-icons/fi";
 
 const ColorChangeCards = () => {
   return (
-    <div className="bg-slate-100 p-4 md:p-8">
+    <div className="bg-slate-100 py-4 md:p-8">
+      <h1 className="w-screen text-center text-3xl bg-black text-white">Referenzen</h1>
       <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-4 md:gap-8 lg:grid-cols-2">
         <Card
           heading="Projekt"

@@ -32,7 +32,7 @@ export default function MobileMenu({ navItems }: MobileMenuProps) {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon">
+        <Button variant="secondary" size="icon">
           <MenuIcon className="h-6 w-6" />
           <span className="sr-only">Open menu</span>
         </Button>
@@ -54,7 +54,7 @@ export default function MobileMenu({ navItems }: MobileMenuProps) {
                           <Link
                             key={subItem.title}
                             href={subItem.href}
-                            className="text-lg text-gray-600 hover:text-gray-900"
+                            className="text-lg text-stone-600 hover:text-amber-500"
                             onClick={() => setOpen(false)}
                           >
                             {subItem.title}
@@ -66,7 +66,7 @@ export default function MobileMenu({ navItems }: MobileMenuProps) {
                 ) : (
                   <Link
                     href={item.href ?? '/'}
-                    className="text-x flex h-12 w-full items-center justify-between border-b px-4 text-sm font-medium text-gray-700 hover:text-red-800"
+                    className="text-x flex h-12 w-full items-center justify-between border-b px-4 text-[1.66rem] uppercase font-medium text-gray-700 hover:text-amber-600"
                     onClick={() => setOpen(false)}
                   >
                     {item.title}

@@ -20,7 +20,7 @@ const IntroWebside = () => {
             {t('zitat')}
             </p>
 
-            <div className="relative -top-2 left-10 flex h-16 w-16 translate-x-16 transform flex-col items-center justify-center rounded-full bg-orange-400 text-xs leading-3 text-white shadow-xl shadow-gray-400/50 sm:h-20 sm:w-20 sm:text-2xl md:-top-1 md:h-24 md:w-24 md:translate-x-44 md:transform md:text-2xl lg:left-2/4 lg:h-32 lg:w-32 lg:text-3xl">
+            <div className="relative -top-2 left-3 flex h-16 w-16 translate-x-16 transform flex-col items-center justify-center rounded-full bg-orange-400 text-xs leading-3 text-white shadow-xl shadow-gray-400/50 sm:h-20 sm:w-20 sm:text-2xl md:-top-1 md:h-24 md:w-24 md:translate-x-44 md:transform md:text-2xl lg:left-2/4 lg:h-32 lg:w-32 lg:text-3xl">
               <p className="relative z-10 text-sm font-black md:text-2xl md:leading-4 lg:text-3xl">
                 Carl
               </p>

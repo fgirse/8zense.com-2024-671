@@ -2898,17 +2898,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-email/render@npm:0.0.16":
-  version: 0.0.16
-  resolution: "@react-email/render@npm:0.0.16"
+"@react-email/render@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@react-email/render@npm:1.0.1"
   dependencies:
     html-to-text: "npm:9.0.5"
     js-beautify: "npm:^1.14.11"
     react-promise-suspense: "npm:0.3.4"
   peerDependencies:
-    react: ^18.2.0
-    react-dom: ^18.2.0
-  checksum: 10c0/1cc3479f674f070f8564b8944dcb86081b7f52b67742d0c255d79b6cea989be0e2207d2adcd5a920ff4b41fbe360d655ac97a71f8ebd5e6d78441cafcfc668dc
+    react: ^18.0 || ^19.0 || ^19.0.0-rc
+    react-dom: ^18.0 || ^19.0 || ^19.0.0-rc
+  checksum: 10c0/52a96fb4ca502cb577071779a665520403b1f5910b7267df91486d2a05bda7ede9e65e2427752c870801aae5c9d18a2d9da0706032388a966ef910ce831a5af5
   languageName: node
   linkType: hard
 
@@ -4408,7 +4408,7 @@ __metadata:
     react-router-dom: "npm:^6.23.1"
     react-svg: "npm:^16.1.33"
     rehype-slug: "npm:^6.0.0"
-    resend: "npm:^3.2.0"
+    resend: "npm:^4.0.1"
     rtl-detect: "npm:^1.1.2"
     server-only: "npm:0.0.1"
     shadcn: "npm:^1.0.0"
@@ -11011,12 +11011,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resend@npm:^3.2.0":
-  version: 3.5.0
-  resolution: "resend@npm:3.5.0"
+"resend@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "resend@npm:4.0.1"
   dependencies:
-    "@react-email/render": "npm:0.0.16"
-  checksum: 10c0/9920a456b926ef7be165a550c1c02355a8390fb215f05778118e3758a636411d49e4fa1ce3c648f42499e5928e7e159e2ebcce89b991c5708ae8b3393a84c242
+    "@react-email/render": "npm:1.0.1"
+  checksum: 10c0/0330ed3b654e7d5ebe3e4d0ff459a6d6a2e550d6bfe6d4e8e9a4d6459fe4a35c9158ca317599304c203ec76171f1e2bc4f078daec64843e191cbdfed46084141
   languageName: node
   linkType: hard
 
