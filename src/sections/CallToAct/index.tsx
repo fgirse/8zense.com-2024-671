@@ -2,7 +2,8 @@ import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useTranslations } from 'next-intl';
 import EmailModal from "@/src/components/EmailModal";  
-import EmailForm from '@/src/sections/CallToAct/EmailForm';
+import EmailForm from '@/src/components/emails/welcome';
+import Trigger  from '@/src/components/emails/Trigger';
 
 const CallToAct: React.FC = () => {
   const t = useTranslations('CallToAct');
@@ -14,7 +15,7 @@ const CallToAct: React.FC = () => {
       <div className=''>
         {/* Other content */}
       </div>
-      <EmailForm userEmail={undefined} />
+      <Trigger />
       <DotLottieReact
         src="/images/calltoact.lottie"
         loop
