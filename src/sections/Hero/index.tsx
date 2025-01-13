@@ -34,7 +34,7 @@ export default function Hero () {
           {t("präTitle")}
          </h1>
          <div className="flex flex-col items-center">
-        <h1 className="aligncontent -mb-3 font-bowlbySC relative top-[3vh] text-[7.0rem] uppercase leading-3 text-[#d3d355] headingC sm:text-4xl md:text-[12rem] md:top-3 lg:text-[15.33rem]  xl:text-[13rem] xl:top-8">
+        <h1 className="aligncontent -mb-3 font-bowlbySC relative top-[3vh] text-[3.0rem] uppercase leading-3 text-[#d3d355] headingC sm:text-4xl md:text-[12rem] md:top-3 lg:text-[15.33rem]  xl:text-[13rem] xl:top-8">
           {t("Title")}
         </h1>
         </div>
