@@ -2,10 +2,11 @@ import React from 'react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { useTranslations } from 'next-intl';
 import EmailModal from "@/src/components/EmailModal";  
-import EmailForm from '@/src/components/emails/welcome';
-import ContactForm from '@/src/components/emails/contactForm';
+import EmailForm from '@/src/components/emails/EmailTemplate';
+import ContactForm from '@/src/components/emails/Contact';
+// import Contact from
 
-const CallToAct: React.FC = () => {
+const CallToAct = () => {
   const t = useTranslations('CallToAct');
 
   return (
@@ -23,9 +24,7 @@ const CallToAct: React.FC = () => {
       <h1 className='relative -top-44  font-bold text-neutral-100 text-6xl text-center'>{t('Fragen')} <span className='text-9xl'>❓</span></h1>
       <p className='relative -top-36 text-center text-neutral-100 text-lg font-raleway'>{t('FragenText01')}</p>
        <div className='relative -top-32'>    
-       <ContactForm requestFunc={function (formData: FormData): Promise<string> {
-          throw new Error('Function not implemented.');
-        } } />
+       <ContactForm />
         </div  >
       </div>
   )
