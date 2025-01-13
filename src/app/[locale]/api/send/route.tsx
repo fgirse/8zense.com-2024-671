@@ -1,121 +1,32 @@
-// app/api/send/route.ts
-
+import { EmailTemplate } from '@/src/components/emails/email-template';
+import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
-import { NextRequest, NextResponse } from 'next/server';
-import MessageUsEmail from '@/src/components/emails/EmailTemplate';
+import { v4 as uuid } from 'uuid';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: NextRequest) {
-  const { name, email, message } = await req.json();
-
+export async function POST(req: Request) {
   try {
-    const data = await resend.emails.send({
-      from: 'Hello <rayden@sonya.dev>', // your verified domain
-        to: `${email}`, // the email address you want to send a message
-      subject: `${name} has a message!`,
-      react: MessageUsEmail({ name, email, message }),
+    const { name, email, subject, message } = await req.json();
+
+    const { data, error } = await resend.emails.send({
+      from: 'Contact Form <onboarding@resend.dev>',
+      to: 'fgirse@icloud.com',
+      subject: subject || 'New Contact Form Submission',
+      replyTo: email,
+      headers: {
+        'X-Entity-Ref-ID': uuid(),
+      },
+      react: EmailTemplate({ firstName: name, message }) as React.ReactElement,
     });
 
-    return NextResponse.json(data);
+    if (error) {
+      return NextResponse.json({ error }, { status: 500 });
+    }
+
+    return NextResponse.json({ data, message: 'success' }, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ error });
+    console.error('Error processing request:', error);
+    return NextResponse.json({ error: 'Failed to process request' }, { status: 500 });
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

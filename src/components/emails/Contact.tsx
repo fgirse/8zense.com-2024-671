@@ -48,27 +48,27 @@ export default function ContactUsForm() {
   }
 
   return (
-    <div className='w-10/12 md:w-6/12'>
+    <div className='w-10/12 md:w-8/12'>
       <form
         onSubmit={handleSubmit(onSubmit)} // updated code
-        className='mb-10 mt-5 flex w-full flex-col rounded-md bg-white p-5 py-14 shadow-lg md:max-w-3xl md:px-10 mx-auto'
+        className='mb-10 mt-5 flex w-[90vw] gap-y-2 flex-col rounded-md bg-white p-5 py-14 shadow-lg md:max-w-3xl md:px-10 mx-auto'
       >
         <input
-          className='mt-4 mb-3 h-14 block w-full rounded-md border px-3 text-gray-600 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
+          className='mt-4 mb-3 h-14 block w-full rounded-md border px-3 text-stone-700 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
           type='text'
           placeholder='Name'
           required
           {...register('name')}
         />
         <input
-          className='mt-4 mb-3 h-14 block w-full rounded-md border px-3 text-gray-600 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
+          className='mt-4 mb-3 h-14 block w-full rounded-md border px-3 text-stone-700 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
           type='email'
           placeholder='Email'
           required
           {...register('email')}
         />
         <textarea
-          className='mt-4 mb-5 block w-full rounded-md border px-3 text-gray-600 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
+          className='mt-4 mb-5 block w-full rounded-md border px-3 text-stone-700 outline-none focus:border-stone-500 focus:outline-none md:mb-0'
           placeholder='Message Us'
           rows={6}
           required
@@ -78,9 +78,9 @@ export default function ContactUsForm() {
         <button
           disabled={isSubmitting}
           type='submit'
-          className='bg-blue-700 px-6 py-3 disabled:bg-gray-500 block-primary rounded-md cursor-pointer text-white mt-4 font-bold'
+          className='border-2 border-stone-700 px-6 py-3 disabled:bg-gray-500 block-primary rounded-md cursor-pointer text-stone-700 mt-4 font-bold hover:bg-stone-300'
         >
-          Book Appointment
+          Send Message
         </button>
       </form>
     </div>
