@@ -29,12 +29,12 @@ export default function Hero () {
         <div className="flex items-center justify-center">
 
         <div className="flex-col items-center justify-center p-6 md:w-4/5 md:px-28 md:py-12">
-        <h1 className="relative mb-2 text-center top-5 text-[1.33rem] leading-9 lg:text-white font-robotoC uppercase text-neutral-100  sm:text-4xl md:text-6x lg:mb7 lg:text-[5.0rem] lg:leading-10 lg:top-1 xl:text-[4.66rem] 2xl:text-[5.166rem] lg:mb-5">
+        <h1 className="relative mb-2 text-center top-5 text-[1.33rem] leading-9 lg:text-white font-robotoC uppercase text-neutral-100  sm:text-4xl md:text-6x lg:mb-7 lg:top-1 xl:text-[.66rem] md:text-5xl ">
         
           {t("präTitle")}
          </h1>
          <div className="flex flex-col items-center">
-        <h1 className="aligncontent -mb-3 font-bowlbySC relative top-[3vh] text-[3.0rem] uppercase leading-3 text-[#d3d355] headingC sm:text-4xl md:text-[12rem] md:top-3 lg:text-[15.33rem]  xl:text-[13rem] xl:top-8">
+        <h1 className="aligncontent -mb-3 font-bowlbySC relative top-[3vh] text-[3.0rem] uppercase leading-3 text-[#d3d355] headingC sm:text-4xl md:text-8xl md:top-3 lg:text-[8rem]   xl:text-[12rem] xl:top-8">
           {t("Title")}
         </h1>
         </div>

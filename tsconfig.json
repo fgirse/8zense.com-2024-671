@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/sections/FeatureAnimated/index.tsx", "src/components/LottiAnimation.tsx", "src/app/[locale]/api/send/route.tsx", "src/components/emails/contactForm.tsx", "src/sections/CallToAct/emailTemplate.tsx", "src/components/emails/EmailTemplate.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/sections/FeatureAnimated/index.tsx", "src/components/LottiAnimation.tsx", "src/app/[locale]/api/v1/send/route.tsx", "src/components/emails/contactForm.tsx", "src/sections/CallToAct/emailTemplate.tsx", "src/components/emails/EmailTemplate.tsx"],
   "exclude": ["node_modules"]
 }
