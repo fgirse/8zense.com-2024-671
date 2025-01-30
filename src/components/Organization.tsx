@@ -1,11 +1,11 @@
 "use client"
 
-import { requestCarbon } from "@/utils/carbon";
+import { requestCarbon } from "@/src/utils/carbon";
 import { Fragment, useEffect, useState } from "react";
 import { useToast } from "./ui/use-toast";
 import { ColumnDef, Row } from "@tanstack/react-table"
 import { DataTable } from "./ui/DataTable";
-import { Button } from "./ui/Button";
+import { Button } from "./ui/button2";
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "./ui/Pagination";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
 import { Input } from "./ui/input";
@@ -14,7 +14,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem } from "./ui/dropdo
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { MoreHorizontal } from "lucide-react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
-import { OrganizationMember } from "@/hooks/useOrganizationMember";
+import { OrganizationMember } from "@/src/hooks/useOrganizationMember";
 
 type RowProps = {
     // These props describe the organization user to be displayed in the row

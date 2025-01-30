@@ -1,18 +1,16 @@
-'use client'
+"use client";
 
+import Link from "next/link";
+import Image from "next/image";
+import { MenuIcon } from "lucide-react";
+import { Button } from "@/src/components/ui/button2";
+import MobileMenu from "@/src/components/layout/Navbar/mobile-menu";
+import NavDropdown from "@/src//components/layout/Navbar/nav-dropdown";
+import { getMessages } from "next-intl/server";
+import LocaleSwitcher from "@/src/components/LocaleSwitcher";
+import { GetStaticProps, GetStaticPaths } from "next";
 
-import Link from 'next/link'
-import Image from 'next/image';
-import { MenuIcon } from 'lucide-react'
-import { Button } from '@/src/components/ui/button'
-import MobileMenu from '@/src/components/layout/Navbar/mobile-menu';
-import NavDropdown from '@/src//components/layout/Navbar/nav-dropdown';
-import { getMessages } from '@/lib/geMssages';
-import LocaleSwitcher from '@/src/components/LocaleSwitcher';
-import { GetStaticProps, GetStaticPaths } from 'next';
-
-
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   if (!params?.locale) {
     return {
@@ -20,7 +18,10 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     };
   }
 
-  const messages = await getMessages(params.locale);
+  const locale = Array.isArray(params.locale)
+    ? params.locale[0]
+    : params.locale;
+  const messages = await getMessages({ locale });
   return {
     props: {
       messages,
@@ -28,48 +29,52 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-export default function Navbar({ }) {
-  const  t  = useTranslations("Navbar");  
+export default function Navbar({}) {
+  const t = useTranslations("Navbar");
 
   const navItems = [
-    { title: t('home'), href: '/' },
+    { title: t("home"), href: "/" },
     {
-      title: t('about'),
+      title: t("about"),
       items: [
-        { title: t('whoweare'), href: '/about/whoweare' },
-        { title: t('whatwedo'), href: '/about/whatwedo' },
-        { title: t('cv'), href: '/about/Curriculum' },
+        { title: t("whoweare"), href: "/about/whoweare" },
+        { title: t("whatwedo"), href: "/about/whatwedo" },
+        { title: t("cv"), href: "/about/Curriculum" },
       ],
     },
-    { title: t('galery'), href: '/galery' },
-    { title: t('Services'), href: '/services' },
-    { title: t('contact'), href: '/contact' },
+    { title: t("galery"), href: "/galery" },
+    { title: t("Services"), href: "/services" },
+    { title: t("contact"), href: "/contact" },
+    { title: t("adminboard"), href: "/admin" },
     {
-      title: t('rechtliches'),
+      title: t("rechtliches"),
       items: [
-        { title: t('impressum'), href: '/Rechtliches/impressum' },
-        { title: t('datenschutz'), href: '/Rechtliches/datenschutz' },
-        { title: t('cookies'), href: '/Rechtliches/cookies' },
-        { title: t('agb'), href: '/Rechtliches/agb' },
+        { title: t("impressum"), href: "/Rechtliches/impressum" },
+        { title: t("datenschutz"), href: "/Rechtliches/datenschutz" },
+        { title: t("cookies"), href: "/Rechtliches/cookies" },
+        { title: t("agb"), href: "/Rechtliches/agb" },
       ],
     },
   ];
 
   return (
-           
     <nav className="bg-amber-600 shadow text-neutral-50 lg:text-2xl">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <div className=' ml-5 flex flex-row justify-center items-center'>
+              <div className=" ml-5 flex flex-row justify-center items-center">
                 <LocaleSwitcher />
               </div>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              {navItems.map((item) => (
+              {navItems.map((item) =>
                 item.items ? (
-                  <NavDropdown key={item.title} title={item.title} items={item.items} />
+                  <NavDropdown
+                    key={item.title}
+                    title={item.title}
+                    items={item.items}
+                  />
                 ) : (
                   <Link
                     key={item.title}
@@ -79,21 +84,15 @@ export default function Navbar({ }) {
                     {item.title}
                   </Link>
                 )
-              ))}
+              )}
             </div>
           </div>
-          <div className="hidden sm:ml-6 sm:flex sm:items-center">
-
-
-
-
-          </div>
+          <div className="hidden sm:ml-6 sm:flex sm:items-center"></div>
           <div className="flex items-center sm:hidden">
             <MobileMenu navItems={navItems} />
-          
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }

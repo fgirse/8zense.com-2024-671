@@ -1,8 +1,8 @@
 'use client';
-import useSyncAPIKeys from '@/hooks/useSyncAPIKeys';
-import useSyncAuth from '@/hooks/useSyncAuth';
-import useSyncInvites from '@/hooks/useSyncInvites';
-import useSyncOrgs from '@/hooks/useSyncOrgs';
+import useSyncAPIKeys from '@/src/hooks/useSyncAPIKeys';
+import useSyncAuth from '@/src/hooks/useSyncAuth';
+import useSyncInvites from '@/src/hooks/useSyncInvites';
+import useSyncOrgs from '@/src/hooks/useSyncOrgs';
 
 function Syncer() {
     useSyncAuth();

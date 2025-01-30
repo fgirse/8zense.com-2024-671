@@ -17,16 +17,27 @@ module.exports = {
     	},
     	extend: {
 
-			fontFamily: {
-
-				bowlbySC: 'var(--font-bowlbySC)',
-		
-				raleway: 'var(--font-raleway)',
-		
-				archidaught: 'var(--font-architectsDaughter)',  
-		
+			backgroundImage: {
+				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+				"gradient-conic":
+				  "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			  },
-			  
+			  colors: {
+				lamaSky: "#C3EBFA",
+				lamaSkyLight: "#EDF9FD",
+				lamaPurple: "#CFCEFF",
+				lamaPurpleLight: "#F1F0FF",
+				lamaYellow: "#FAE27C",
+				lamaYellowLight: "#FEFCE8",
+			  },
+			
+
+
+    		fontFamily: {
+    			bowlbySC: 'var(--font-bowlbySC)',
+    			raleway: 'var(--font-raleway)',
+    			archidaught: 'var(--font-architectsDaughter)'
+    		},
     		colors: {
     			border: 'hsl(var(--border))',
     			input: 'hsl(var(--input))',
@@ -90,14 +101,30 @@ module.exports = {
     				to: {
     					height: '0'
     				}
+    			},
+    			marquee: {
+    				from: {
+    					transform: 'translateX(0)'
+    				},
+    				to: {
+    					transform: 'translateX(calc(-100% - var(--gap)))'
+    				}
+    			},
+    			'marquee-vertical': {
+    				from: {
+    					transform: 'translateY(0)'
+    				},
+    				to: {
+    					transform: 'translateY(calc(-100% - var(--gap)))'
+    				}
     			}
     		},
     		animation: {
     			'accordion-down': 'accordion-down 0.2s ease-out',
-    			'accordion-up': 'accordion-up 0.2s ease-out'
+    			'accordion-up': 'accordion-up 0.2s ease-out',
+    			marquee: 'marquee var(--duration) infinite linear',
+    			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
     		}
-
-			
     	}
     },
 	plugins: [require("tailwindcss-animate")],

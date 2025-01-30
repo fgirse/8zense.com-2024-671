@@ -10,7 +10,7 @@ import Background from "@/public/images/footsteps.png";
 import { Locale } from "@/src/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
-
+import TypeAnimation from "@/src/components/TypingAnimation"
 
 
 const locale: string = "en";
@@ -34,6 +34,7 @@ export default function Hero () {
           {t("präTitle")}
          </h1>
          <div className="flex flex-col items-center">
+          t
         <h1 className="aligncontent -mb-3 font-bowlbySC relative top-[3vh] text-[3.0rem] uppercase leading-3 text-[#d3d355] headingC sm:text-4xl md:text-8xl md:top-3 lg:text-[8rem]   xl:text-[12rem] xl:top-8">
           {t("Title")}
         </h1>

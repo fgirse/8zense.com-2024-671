@@ -1,8 +1,8 @@
     "use client"
 
 import { useEffect, useState } from "react";
-import { OrganizationMember } from "@/hooks/useOrganizationMember"
-import { requestCarbon } from "@/utils/carbon";
+import { OrganizationMember } from "@/src/hooks/useOrganizationMember"
+import { requestCarbon } from "@/src/utils/carbon";
 import { useToast } from "./ui/use-toast";
 import Loader from "./ui/Loader";
 import { useRouter } from "next/navigation";

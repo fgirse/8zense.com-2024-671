@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import { createClient as createBrowserClient } from '@/utils/supabase/client';
-import { useToast } from '@/components/ui/use-toast';
-import { InviteStatus, RoleId } from '@/types/supabase';
-import Loader from '@/components/ui/Loader';
-import { useOrgsStore } from '@/store/useOrgsStore';
-import { Button } from '@/components/ui/Button';
+import { createClient as createBrowserClient } from '@/src/utils/supabase/client';
+import { useToast } from '@/src/components/ui/use-toast';
+import { InviteStatus, RoleId } from '@/src/types/supabase';
+import Loader from '@/src/components/ui/Loader';
+import { useOrgsStore } from '@/src/store/useOrgsStore';
+import { Button } from '@/src/components/ui/button2';
 import { PlusCircle } from 'lucide-react';
 import {
     Select,
@@ -14,7 +14,7 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select';
+} from '@/src/components/ui/select';
 
 interface InviteRequest {
     recipient_email: string;

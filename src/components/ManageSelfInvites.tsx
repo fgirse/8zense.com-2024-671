@@ -1,12 +1,12 @@
 'use client';
 
-import { useInvitesStore } from '@/store/useInvitesStore';
-import { createClient } from '@/utils/supabase/client';
+import { useInvitesStore } from '@/src/store/useInvitesStore';
+import { createClient } from '@/src/utils/supabase/client';
 import React from 'react';
-import { Button } from '@/components/ui/Button';
-import { Invite, InviteStatus } from '@/types/supabase';
-import { useToast } from '@/components/ui/use-toast';
-import { useAuthStore } from '@/store/useAuthStore';
+import { Button } from '@/src/components/ui/button2';
+import { Invite, InviteStatus } from '@/src/types/supabase';
+import { useToast } from '@/src/components/ui/use-toast';
+import { useAuthStore } from '@/src/store/useAuthStore';
 
 function ManageSelfInvites() {
     const { invites } = useInvitesStore();

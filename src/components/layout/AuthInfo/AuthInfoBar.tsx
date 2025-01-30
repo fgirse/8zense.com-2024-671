@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/src/components/ui/button2";
 import { useUser } from "@/src/hooks/useUser";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import Link from "next/link";
@@ -55,7 +55,7 @@ export default function Authinfobar() {
               </div>
               <div className="w-full bg-neutral-400 flex flex-row items-center justify-end bg-neutral-300/50 gap-">
                 <div className="w-full  text-center bg-[#d3d355] uppercase text-lg lg:text-xl text-white border-l border-r py-5 px-3 hover:bg-amber-400">
-                  <Link href="/dashboard">Dashboard</Link>
+                  <Link href="/admin">Adminboard</Link>
                 </div>
                 <div
                   className="w-full text-center bg-[#d39c55] uppercase text-lg lg:text-xl text-white border-l border-r py-5 px-3 hover:bg-amber-400"

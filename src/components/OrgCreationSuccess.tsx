@@ -3,7 +3,7 @@
 import React from 'react';
 import { useSearchParams } from 'next/navigation';
 import { CheckCircle } from 'lucide-react';
-import { Organization } from '@/hooks/useOrganizationMember';
+import { Organization } from '@/src/hooks/useOrganizationMember';
 
 function OrgCreationSuccess(props: { organization: Organization }) {
     const searchParams = useSearchParams();

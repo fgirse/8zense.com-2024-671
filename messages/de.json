@@ -132,7 +132,8 @@
       "datenschutz": "Datenschutz",
       "rechtliches": "Rechtliches",
       "cookies": "Cookies",
-      "agb": "allgemeine Geschäftsbedingungen"
+      "agb": "allgemeine Geschäftsbedingungen",
+      "adminboard": "Adminboard"
     },
     "NotFoundPage": {
       "description": "Bitte überprüfe die Addressleiste deines Browsers oder verwende die Navigation um zu einer bekannten Seite zu wechseln.",

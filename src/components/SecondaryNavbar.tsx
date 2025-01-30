@@ -2,8 +2,8 @@
 
 import React from 'react';
 import SecondaryNavLinks from './SecondaryNavLinks';
-import { useAuthStore } from '@/store/useAuthStore';
-import { useOrgsStore } from '@/store/useOrgsStore';
+import { useAuthStore } from '@/src/store/useAuthStore';
+import { useOrgsStore } from '@/src/store/useOrgsStore';
 
 function SecondaryNavbar() {
     const { user } = useAuthStore();

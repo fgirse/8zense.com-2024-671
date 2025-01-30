@@ -17,7 +17,7 @@ export default async function AuthButton() {
 
     const supabase = createClient();
     await supabase.auth.signOut();
-    return redirect("/login");
+    return redirect("/sign-in");
   };
 
   const t = await getTranslations("authButton");
@@ -33,7 +33,7 @@ export default async function AuthButton() {
     </div>
   ) : (
     <Link
-      href="/login"
+      href="@/src/hooksdd"
       className="cursor-pointer py-2 px-3 flex h-12 rounded-xl text-3xl no-underline bg-amber-500 hover:bg-amber-600"
     >
       {t("login")}

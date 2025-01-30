@@ -3,20 +3,17 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { MenuIcon, X } from 'lucide-react'
-import { Button } from '@/src/components/ui/button'
+import { Button } from '@/src/components/ui/button2'
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet'
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion'
+} from '@/src/components/ui/sheet'
+
+import { Accordion, AccordionItem, AccordionTrigger } from '@radix-ui/react-accordion'
+import { AccordionContent } from '@/src/components/ui/accordion'
 
 interface MobileMenuProps {
   navItems: Array<{

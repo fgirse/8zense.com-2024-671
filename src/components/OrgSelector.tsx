@@ -2,22 +2,22 @@
 
 import Image from 'next/image';
 import { Check, ChevronsUpDown } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/Button';
+import { cn } from '@/src/lib/utils';
+import { Button } from '@/src/components/ui/button2';
 import {
     Command,
     CommandEmpty,
     CommandGroup,
     CommandInput,
     CommandItem,
-} from '@/components/ui/command';
+} from '@/src/components/ui/command';
 import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from '@/components/ui/popover';
+} from '@/src/components/ui/popover';
 import { useState } from 'react';
-import { useOrgsStore } from '@/store/useOrgsStore';
+import { useOrgsStore } from '@/src/store/useOrgsStore';
 
 function OrgSelector() {
     const [open, setOpen] = useState(false);
@@ -27,10 +27,10 @@ function OrgSelector() {
     if (loading || !orgs.length) {
         return (
             <Image
-                src="/logo-carbon.png"
+                src="/images/LogoEZ990.svg"
                 width={150}
                 height={39.45}
-                alt="Carbon Logo"
+                alt="8zense.com Logo"
             />
         );
     }
@@ -67,14 +67,14 @@ function OrgSelector() {
                             <CommandInput placeholder="Search Org..." />
                             <CommandEmpty>No org found.</CommandEmpty>
                             <CommandGroup>
-                                {orgs.map((org) => (
+                                {orgs.map((org: { org_id: any; org_name: any; }) => (
                                     <CommandItem
                                         key={org.org_id}
                                         value={org.org_id}
-                                        onSelect={(currentValue) => {
+                                        onSelect={(currentValue: string) => {
                                             // get org from orgs based on org_id
                                             const newOrg = orgs.find(
-                                                (org) =>
+                                                (org: { org_id: string; }) =>
                                                     org.org_id === currentValue
                                             );
 

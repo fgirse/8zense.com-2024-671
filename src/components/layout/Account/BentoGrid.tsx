@@ -6,7 +6,7 @@ import ArchGrafik from "@/public/images/grafik70.png";
 import Tools from "@/src/components/Tools";
 import { transform } from "next/dist/build/swc";
 import Projekt from "@/public/images/Hotel-SaoPaulo.png";
-import { Button } from "@/src/components/ui/button";
+import { Button } from "@/src/components/ui/button2";
 import Image from "next/image";
 import LogoEZ from '@/public/images/LogoEZ990.svg'
 export default function Dashboard() {

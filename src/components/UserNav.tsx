@@ -1,7 +1,7 @@
 'use client';
 
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/Button';
+import { Avatar, AvatarFallback } from '@/src/components/ui/avatar';
+import { Button } from '@/src/components/ui/button2';
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -10,15 +10,15 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+} from '@/src/components/ui/dropdown-menu';
 import Link from 'next/link';
 import { IoBookOutline } from "react-icons/io5";
 import { IoMdHelpCircleOutline } from "react-icons/io";
-import { createClient } from '@/utils/supabase/client';
+import { createClient } from '@/src/utils/supabase/client';
 import { useRouter } from 'next/navigation';
-import { useAuthStore } from '@/store/useAuthStore';
+import { useAuthStore } from '@/src/store/useAuthStore';
 import { useEffect, useState } from 'react';
-import { requestCarbon } from '@/utils/carbon';
+import { requestCarbon } from '@/src/utils/carbon';
 
 const supabase = createClient();
 
@@ -50,7 +50,7 @@ export default function UserNav(props: {
 
     const signOut = async () => {
         await supabase.auth.signOut();
-        router.push('/login');
+        router.push('/sign-in');
     };
 
     useEffect(() => {

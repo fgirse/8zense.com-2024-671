@@ -1,16 +1,16 @@
 'use client';
 
 import React, { useState } from 'react';
-import { createClient as createBrowserClient } from '@/utils/supabase/client';
-import { useToast } from '@/components/ui/use-toast';
-import { Status } from '@/types/common';
-import Loader from '@/components/ui/Loader';
+import { createClient as createBrowserClient } from '@/src/utils/supabase/client';
+import { useToast } from '@/src/components/ui/use-toast';
+import { Status } from '@/src/types/common';
+import Loader from '@/src/components/ui/Loader';
 import { useRouter } from 'next/navigation';
 import { MoveRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useInvitesStore } from '@/store/useInvitesStore';
+import { useInvitesStore } from '@/src/store/useInvitesStore';
 import { User } from '@supabase/supabase-js';
-import { requestCarbon } from '@/utils/carbon';
+import { requestCarbon } from '@/src/utils/carbon';
 
 const CreateOrg = (
     props: {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/src/components/ui/button2';
 import {
     Dialog,
     DialogContent,
@@ -10,14 +10,14 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from '@/components/ui/dialog';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { useAuthStore } from '@/store/useAuthStore';
-import { useToast } from '@/components/ui/use-toast';
-import Loader from '@/components/ui/Loader';
-import { OrganizationMember } from '@/hooks/useOrganizationMember';
-import { requestCarbon } from '@/utils/carbon';
+} from '@/src/components/ui/dialog';
+import { Input } from '@/src/components/ui/input';
+import { Label } from '@/src/components/ui/label';
+import { useAuthStore } from '@/src/store/useAuthStore';
+import { useToast } from '@/src/components/ui/use-toast';
+import Loader from '@/src/components/ui/Loader';
+import { OrganizationMember } from '@/src/hooks/useOrganizationMember';
+import { requestCarbon } from '@/src/utils/carbon';
 import { useRouter } from 'next/navigation';
 
 // TODO move this type into a dedicated file
@@ -53,7 +53,7 @@ const CreateAPIKeys = (
 
     const createAPIKey = async () => {
         if (!user) {
-            router.push("/login");
+            router.push("/sign-in");
             return;
         }
         if (!label) {

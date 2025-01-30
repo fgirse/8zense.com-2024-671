@@ -1,14 +1,14 @@
 'use client'
 
 import { useState } from "react";
-import { useAuthStore } from '@/store/useAuthStore';
+import { useAuthStore } from '@/src/store/useAuthStore';
 import { useToast } from "./ui/use-toast";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
 import { APIKey } from "./CreateAPIKeys";
-import { Button } from "./ui/Button";
+import { Button } from "./ui/button2";
 import Loader from "./ui/Loader";
 import { Trash } from "lucide-react";
-import { requestCarbon } from "@/utils/carbon";
+import { requestCarbon } from "@/src/utils/carbon";
 
 function DeleteAPIKeys(
     props: { 

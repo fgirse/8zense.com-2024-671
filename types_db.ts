@@ -107,6 +107,37 @@ export interface Database {
         }
         Relationships: []
       }
+      api_keys: {
+        Row: {
+          active: boolean | null
+          description: string | null
+          id: string
+         
+        image: string | null
+          metadata: Json | null
+          name: string | null
+          created_at: Date        
+        }
+        Insert: {
+          active?: boolean | null
+          description?: string | null
+          id: string
+          image?: string | null
+          metadata?: Json | null
+          name?: string | null
+        }
+        Update: {
+          active?: boolean | null
+          description?: string | null
+          id?: string
+          image?: string | null
+          metadata?: Json | null
+          name?: string | null
+        }
+        Relationships: []
+      }
+
+
       subscriptions: {
         Row: {
           cancel_at: string | null

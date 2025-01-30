@@ -56,3 +56,14 @@ export interface Subscription {
     trial_end?: string;
     prices?: Price;
 }
+
+export interface APIKey {
+    api_key_id: string;
+    apikey: string | null;
+    created_by: string; 
+    org_id: string;
+    created_at: Date;                 
+    updated_at?: string;  
+    is_active: boolean;
+    
+}

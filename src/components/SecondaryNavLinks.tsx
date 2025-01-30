@@ -1,6 +1,6 @@
 'use client';
 
-import { useOrgsStore } from '@/store/useOrgsStore';
+import { useOrgsStore } from '@/src/store/useOrgsStore';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
@@ -38,7 +38,7 @@ function SecondaryNavLinks() {
     if (!activeOrg) return null;
 
     return (
-        <div className="mt-5 flex w-full border-b border-b-foreground/10">
+        <div className="mt-5 flex w-full border-b border-b-blue-500">
             {navLinks.map(({ name, path }) => (
                 <NavLink
                     key={path}

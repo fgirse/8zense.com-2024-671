@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import EmailModal from "@/src/components/EmailModal";
-import {Button} from "@/src/components/ui/button";
+import {Button} from "@/src/components/ui/button2";
 import Skizze from "@/public/images/skizze.png";
 
 import Space from "@/public/images/space02.svg";

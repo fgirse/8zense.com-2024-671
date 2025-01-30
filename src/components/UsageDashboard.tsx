@@ -1,5 +1,5 @@
 'use client';
-import { useOrgsStore } from '@/store/useOrgsStore';
+import { useOrgsStore } from '@/src/store/useOrgsStore';
 import React from 'react';
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
